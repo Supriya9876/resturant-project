@@ -1,0 +1,231 @@
+#logo img{
+    height: 50px;
+    width: 50px;
+    /* border: 2px solid black; */
+    padding: 0px 3px;
+    margin: 2px 25px 2px 10px;
+    border-radius: 150px;
+}
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:60px
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#navbar ul{
+    display: flex;
+    padding: 10px 10px ;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3 rem;
+}
+#navbar ul li a{
+    font-family: 'Baloo 2', cursive;
+    display: block;
+    padding: 1px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: seashell;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 20px;
+    justify-content: center;
+    align-items: center;
+    height: 185px;
+    margin: 25px;
+}
+#home::before{
+    content: "";
+    background:url("homebackground.jpeg")no-repeat center center/cover;
+    position: absolute;
+    height: 357px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+
+}
+#home h1{
+    margin: 25px 0px 0px 0px;
+    font-family: 'Baloo 2', cursive;
+    color:black;
+    text-align: center;
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.4rem;
+}
+#home p:hover{
+    font-weight: bolder;
+    background-color:white;
+    border-radius: 10px;
+}
+/* Services Center */
+.service{
+    font-family: 'Baloo 2', cursive;
+    font-size: 3.5rem;
+    padding: 10px;
+    margin-top: 80px;
+    text-align: center;
+}
+.h-primary center{
+    margin-top: 40px;
+    text-align: center;
+    justify-content: center;
+}
+#services{
+    margin: 10px;
+    display: flex;
+    margin-bottom: 40px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 3px 20px;
+    border-radius: 20px;
+    background-color: rgb(218, 212, 212);
+    box-shadow:10px 10px brown;
+}
+#services .box img{
+    height: 140px;
+    display: block;
+    margin: auto;
+}
+.box h2{
+    text-align: center;
+}
+
+
+/* Client Section */
+#client-section{
+    position: relative;
+    height: 300px;
+}
+#clients{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.client-items{
+    margin-top: 5px;
+    padding: 34px;
+}
+#clients img{
+    height:80px;
+}
+#clients::before{
+    content: "";
+    position: absolute;
+    background: url("https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+    
+}
+    #contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+    background: url("https://images.pexels.com/photos/225232/pexels-photo-225232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")no-repeat center center/cover; 
+
+} 
+
+#contact-box{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    padding: 10px 440px;
+    
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Baloo 2',cursive;
+    font-size: 1.1rem;
+}
+/* #contact-box form{
+width: 40%;
+} */
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: 'Baloo 2', cursive;
+}
+
+
+
+footer{
+    background: black;
+    color: white;
+
+}
+/* Utility Classes */
+.h-primary{
+    font-family: 'Baloo 2', cursive;
+    font-size: 3.5rem;
+    padding: 0px;
+    margin-top: 6px;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 8px;
+}
+.btn{
+    padding: 3px 10px;
+    border: 2px solid black ;
+    background-color: bisque;
+    color: brown;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+}
+.btn:hover{
+    color: bisque;
+    background-color: brown;
+}
+.center{
+    text-align: center;
+}
